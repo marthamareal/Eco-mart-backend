@@ -10,9 +10,10 @@ class UserProfileAdmin(UserAdmin):
             None,
             {
                 "classes": ("wide",),
-                "fields": ("username","email", "password1", "password2"),
+                "fields": ("username", "email", "password1", "password2"),
             },
         ),
     )
+
 
 admin.site.register(UserProfile, UserProfileAdmin)
