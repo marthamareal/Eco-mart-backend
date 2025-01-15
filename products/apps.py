@@ -1,7 +1,6 @@
-from django.contrib import admin
-
-from .models import Category, Product
+from django.apps import AppConfig
 
 
-admin.site.register(Category)
-admin.site.register(Product)
+class ProductConfig(AppConfig):
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "products"
